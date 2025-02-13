@@ -8,7 +8,6 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
@@ -37,17 +36,6 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const handleRedirect = (page: string) => {
-    console.log(page);
-    if (page === "Home") {
-    navigate("/"); // Navigate to Home
-    } else {
-    navigate(`/${page}`); // Navigate to other pages
-    }
-    handleCloseNavMenu(); // Close menu after navigation
-};
-
-
 
   return (
     <AppBar position="static">

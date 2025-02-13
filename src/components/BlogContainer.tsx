@@ -7,7 +7,6 @@ import {
     ListItem,
     Typography,
     List,
-    CardActionArea,
     Dialog,
     IconButton,
     CardMedia
