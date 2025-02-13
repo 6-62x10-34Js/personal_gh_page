@@ -14,9 +14,9 @@ const App: React.FC = () => {
   return (
       <><ResponsiveAppBar/>
           <Routes>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/blog" element={<Blog/>}/>
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Aontact" element={<Contact/>}/>
+          <Route path="/Blog" element={<Blog/>}/>
 
           </Routes>
 
