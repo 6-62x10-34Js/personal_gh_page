@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename="/personal_gh_page/Home">
       <App />
     </HashRouter>
   </React.StrictMode>
