@@ -197,7 +197,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://github.com/mui"
+              href="https://github.com/6-62x10-34Js"
               aria-label="GitHub"
               sx={{ alignSelf: 'center' }}
             >
@@ -206,7 +206,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://x.com/MaterialUI"
+              href="https://x.com/MagnetoGorg"
               aria-label="X"
               sx={{ alignSelf: 'center' }}
             >
@@ -215,7 +215,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://www.linkedin.com/company/mui/"
+              href="https://www.linkedin.com/in/georg-bl%C3%BCthner-783829294/"
               aria-label="LinkedIn"
               sx={{ alignSelf: 'center' }}
             >
