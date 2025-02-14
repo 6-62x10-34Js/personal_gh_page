@@ -31,141 +31,18 @@ function Copyright() {
 export default function Footer() {
   return (
     <React.Fragment>
-      <Divider />
       <Container
         sx={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           gap: { xs: 4, sm: 8 },
-          py: { xs: 8, sm: 10 },
+          pb: { xs: 8, sm: 10 },
+            pt: { xs: 2, sm: 2 },
           textAlign: { sm: 'center', md: 'left' },
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            width: '100%',
-            justifyContent: 'space-between',
-          }}
-        >
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 4,
-              minWidth: { xs: '100%', sm: '60%' },
-            }}
-          >
-            <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-              <Typography
-                variant="body2"
-                gutterBottom
-                sx={{ fontWeight: 600, mt: 2 }}
-              >
-                Join the newsletter
-              </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
-                Subscribe for weekly updates. No spams ever!
-              </Typography>
-              <InputLabel htmlFor="email-newsletter">Email</InputLabel>
-              <Stack direction="row" spacing={1} useFlexGap>
-                <TextField
-                  id="email-newsletter"
-                  hiddenLabel
-                  size="small"
-                  variant="outlined"
-                  fullWidth
-                  aria-label="Enter your email address"
-                  placeholder="Your email address"
-                  slotProps={{
-                    htmlInput: {
-                      autoComplete: 'off',
-                      'aria-label': 'Enter your email address',
-                    },
-                  }}
-                  sx={{ width: '250px' }}
-                />
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="small"
-                  sx={{ flexShrink: 0 }}
-                >
-                  Subscribe
-                </Button>
-              </Stack>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-              flexDirection: 'column',
-              gap: 1,
-            }}
-          >
-            <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-                {footerText.right_menu_title}
-            </Typography>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.right_menu_item_1}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.right_menu_item_2}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.right_menu_item_3}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.right_menu_item_4}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.right_menu_item_5}
-            </Link>
-          </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-              flexDirection: 'column',
-              gap: 1,
-            }}
-          >
-            <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-                {footerText.center_menu_title}
-            </Typography>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.center_menu_item_1}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.center_menu_item_2}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.center_menu_item_3}
-            </Link>
-          </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-              flexDirection: 'column',
-              gap: 1,
-            }}
-          >
-            <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-                {footerText.left_menu_title}
-            </Typography>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.left_menu_item_1}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.left_menu_item_2}
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-                {footerText.left_menu_item_3}
 
-            </Link>
-          </Box>
-        </Box>
         <Box
           sx={{
             display: 'flex',
