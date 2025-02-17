@@ -9,7 +9,7 @@ import {
     List,
     Dialog,
     IconButton,
-    CardMedia
+    CardMedia, Chip
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import BlogCard from "./BlogCard";
@@ -114,6 +114,7 @@ const BlogContainer: React.FC = () => {
                                 <Typography variant="body2" color="textSecondary">
                                     By {selectedPost.author} | {new Date(selectedPost.date).toLocaleDateString()}
                                 </Typography>
+                                <Chip label={selectedPost.topic} sx={{ml: 2}}/>
                             </Box>
                             <Typography variant="body1">
                                 <div
@@ -147,7 +148,7 @@ const BlogContainer: React.FC = () => {
                         padding: 2, // Add padding for spacing
                     }}
                 >
-                    {blogPosts.slice(0, 4).map((post) => (
+                    {blogPosts.slice(0, 4).reverse().map((post) => (
                         <Box
                             key={post.id}
                             onClick={() => handleOpen(post)}

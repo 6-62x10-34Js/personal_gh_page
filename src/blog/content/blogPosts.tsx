@@ -1,96 +1,158 @@
-
 interface BlogPosts {
-  id: number;
-  title: string;
-  subtitle: string;
-  description: string;
-  topic: string;
-  author: string;
-  date: string;
-  authorAvatar: string;
-  topicImage: string;
-  thumbnail: string;
-  content: string;
-  images: string[];
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    topic: string;
+    author: string;
+    date: string;
+    authorAvatar: string;
+    topicImage: string;
+    thumbnail: string;
+    content: string;
+    images: string[];
 }
 
 const blogPosts: BlogPosts[] = [
-  {
-    id: 1,
-    title: "The Growing Inaccessibility of Science",
-    subtitle: "How Barriers to Scientific Knowledge are Expanding",
-    description: "Explore the increasing challenges in accessing scientific research and knowledge.",
-    topic: "Science",
-    author: "Georg Herbert Blüthner",
-    date: "2025-02-13",
-    authorAvatar: "georg-herbert-bluthner.webp",
-    topicImage: "the-growing-inaccessibility-of-science-v0-gusdztk7vf3d1.webp",
-    thumbnail: "gene-7031244_640.png",
-    content: '<p>Science has long been a field driven by curiosity, discovery, and the pursuit of knowledge. However, in recent years, we have witnessed a troubling trend: the growing inaccessibility of scientific information. Despite the rise of the digital age and a greater number of open-access platforms, scientific research is increasingly becoming confined behind paywalls, complex jargon, and institutional barriers.</p>\n' +
-        '\n' +
-        '<h2>Barriers to Access: Paywalls and Publishing Models</h2>\n' +
-        '<p>One of the most significant challenges facing the accessibility of science today is the dominance of paywalls in scientific journals. While open-access initiatives have gained traction, many of the most impactful journals still require expensive subscriptions to access research articles. This paywall system creates a divide between those who can afford access and those who cannot, limiting opportunities for individuals and institutions, particularly in developing countries, to access cutting-edge knowledge.</p>\n' +
-        '\n' +
-        '<h2>The Impact of Complex Jargon and Language</h2>\n' +
-        '<p>Even when scientific research is available to the public, it is often written in complex, technical language that makes it difficult for non-specialists to understand. This further alienates the general public, preventing a wider audience from engaging with the information. In some cases, this leads to misinterpretations or the distortion of scientific facts, especially in media outlets that simplify research findings to fit a narrative.</p>\n' +
-        '\n' +
-        '<h2>The Role of Institutions and Commercialization</h2>\n' +
-        '<p>Another key factor contributing to the growing inaccessibility of science is the commercialization of knowledge. As scientific research becomes more intertwined with corporate interests, institutions and researchers may prioritize profitable ventures over the free dissemination of knowledge. This can result in a system where scientific advancements are locked behind patents or proprietary technologies, further limiting public access to important findings.</p>\n' +
-        '\n' +
-        '<h2>The Need for Change: Open Science and Collaboration</h2>\n' +
-        '<p>To counter these challenges, the scientific community must embrace the principles of open science—an approach that encourages transparency, collaboration, and the free sharing of data and research findings. Open-access journals, preprints, and collaborative platforms are essential to ensuring that science is accessible to everyone, regardless of their financial resources or academic background.</p>\n' +
-        '\n' +
-        '<p>Furthermore, efforts to make scientific language more accessible to the general public are crucial. This can be achieved by promoting plain language summaries, infographics, and public outreach initiatives that bridge the gap between researchers and the public.</p>\n' +
-        '\n' +
-        '<h2>A Future of Accessible Science</h2>\n' +
-        '<p>While the growing inaccessibility of science is a serious concern, there is hope. As more individuals and institutions push for greater openness and transparency, we can move toward a future where scientific knowledge is truly accessible to all. By dismantling the barriers to access and prioritizing inclusivity, we can ensure that science remains a tool for the benefit of humanity as a whole.</p>\n',
-    images: ["/images/hooks_example1.png", "/images/hooks_example2.png"]
-  },
-  {
-    id: 2,
-    title: "Studying in Graz: The NAWI Graz Experience",
-    subtitle: "Fostering Collaboration Between University of Graz and TU Graz",
-    description: "Discover how NAWI Graz blends scientific depth and technical expertise.",
-    topic: "Education",
-    author: "Georg Herbert Blüthner",
-    date: "2025-02-13",
-    authorAvatar: "georg-herbert-bluthner.webp",
-    topicImage: "NAWI_Graz_Logo_2015.png",
-    thumbnail: "university-library-4825366_640.jpg",
-    content: "<p>The NAWI Graz program is an exceptional collaboration between the University of Graz and the Technical University of Graz (TU Graz). This partnership brings together the strengths of both institutions, allowing students to experience the best of both worlds—scientific depth at the University of Graz and technical application at TU Graz.</p>\n" +
-        "\n" +
-        "<p><strong>Bachelor’s in Environmental Systems Sciences</strong></p>\n" +
-        "\n" +
-        "<p>One of the standout programs within NAWI Graz is the Environmental Systems Sciences bachelor’s degree. This interdisciplinary program provides a strong foundation in environmental science, sustainability, and systems thinking. Students gain expertise in analyzing ecological and human-made systems using a combination of natural sciences, mathematics, and socio-economic approaches.</p>\n" +
-        "\n" +
-        "<p>At the University of Graz, students delve into environmental modeling, climate science, and sustainability studies, while TU Graz offers technical applications, data analysis, and engineering solutions to environmental challenges.</p>\n" +
-        "\n" +
-        "<p><strong>Master’s in Space Sciences and Earth from Space</strong></p>\n" +
-        "\n" +
-        "<p>For those passionate about space exploration and earth observation, the Space Sciences and Earth from Space master’s program provides cutting-edge education in astrophysics, remote sensing, and planetary sciences.</p>\n" +
-        "\n" +
-        "<p>At the University of Graz, students focus on astrophysics, geophysics, and planetary research, guided by leading scientists in space science.</p>\n" +
-        "\n" +
-        "<p>At TU Graz, the emphasis shifts to satellite technology, remote sensing, and data analysis, equipping students with the technical expertise needed for careers in the space industry.</p>\n" +
-        "\n" +
-        "<p><strong>A Collaborative Learning Experience</strong></p>\n" +
-        "\n" +
-        "<p>The NAWI Graz model ensures students receive an interdisciplinary education by taking courses at both universities. This allows for a dynamic learning environment where students engage with researchers, work on joint projects, and access state-of-the-art laboratories.</p>\n" +
-        "\n" +
-        "<p>With strong industry connections and opportunities for international research collaborations, NAWI Graz students are well-prepared for careers in environmental science, space technology, and beyond.</p>\n",
-    images: ["/images/mui_example1.png", "/images/mui_example2.png"]
-  },
-    // {
-    //     id: 3,
-    //     title: "TypeScript Crash Course",
-    //     subtitle: "A beginner's guide to TypeScript",
-    //     description: "Learn the basics of TypeScript and how to use it in your projects. Blabla",
-    //     topic: "TypeScript",
-    //     topicImage: "/images/typescript.png",
-    //     thumbnail: "/images/typescript_thumbnail.jpg",
-    //     content: `TypeScript is a superset of JavaScript that adds static types and other features to the language...`,
-    //     images: ["/images/typescript_example1.png", "/images/typescript_example2.png"]
-    // },
+    {
+        id: 1,
+        title: "The Growing Inaccessibility of Science",
+        subtitle: "How Barriers to Scientific Knowledge are Expanding",
+        description: "Explore the increasing challenges in accessing scientific research and knowledge.",
+        topic: "Science",
+        author: "Georg Herbert Blüthner",
+        date: "2025-02-13",
+        authorAvatar: "georg-herbert-bluthner.webp",
+        topicImage: "the-growing-inaccessibility-of-science-v0-gusdztk7vf3d1.webp",
+        thumbnail: "gene-7031244_640.png",
+        content: '<p>Science has long been a field driven by curiosity, discovery, and the pursuit of knowledge. However, in recent years, we have witnessed a troubling trend: the growing inaccessibility of scientific information. Despite the rise of the digital age and a greater number of open-access platforms, scientific research is increasingly becoming confined behind paywalls, complex jargon, and institutional barriers.</p>\n' +
+            '\n' +
+            '<h2>Barriers to Access: Paywalls and Publishing Models</h2>\n' +
+            '<p>One of the most significant challenges facing the accessibility of science today is the dominance of paywalls in scientific journals. While open-access initiatives have gained traction, many of the most impactful journals still require expensive subscriptions to access research articles. This paywall system creates a divide between those who can afford access and those who cannot, limiting opportunities for individuals and institutions, particularly in developing countries, to access cutting-edge knowledge.</p>\n' +
+            '\n' +
+            '<h2>The Impact of Complex Jargon and Language</h2>\n' +
+            '<p>Even when scientific research is available to the public, it is often written in complex, technical language that makes it difficult for non-specialists to understand. This further alienates the general public, preventing a wider audience from engaging with the information. In some cases, this leads to misinterpretations or the distortion of scientific facts, especially in media outlets that simplify research findings to fit a narrative.</p>\n' +
+            '\n' +
+            '<h2>The Role of Institutions and Commercialization</h2>\n' +
+            '<p>Another key factor contributing to the growing inaccessibility of science is the commercialization of knowledge. As scientific research becomes more intertwined with corporate interests, institutions and researchers may prioritize profitable ventures over the free dissemination of knowledge. This can result in a system where scientific advancements are locked behind patents or proprietary technologies, further limiting public access to important findings.</p>\n' +
+            '\n' +
+            '<h2>The Need for Change: Open Science and Collaboration</h2>\n' +
+            '<p>To counter these challenges, the scientific community must embrace the principles of open science—an approach that encourages transparency, collaboration, and the free sharing of data and research findings. Open-access journals, preprints, and collaborative platforms are essential to ensuring that science is accessible to everyone, regardless of their financial resources or academic background.</p>\n' +
+            '\n' +
+            '<p>Furthermore, efforts to make scientific language more accessible to the general public are crucial. This can be achieved by promoting plain language summaries, infographics, and public outreach initiatives that bridge the gap between researchers and the public.</p>\n' +
+            '\n' +
+            '<h2>A Future of Accessible Science</h2>\n' +
+            '<p>While the growing inaccessibility of science is a serious concern, there is hope. As more individuals and institutions push for greater openness and transparency, we can move toward a future where scientific knowledge is truly accessible to all. By dismantling the barriers to access and prioritizing inclusivity, we can ensure that science remains a tool for the benefit of humanity as a whole.</p>\n',
+        images: ["/images/hooks_example1.png", "/images/hooks_example2.png"]
+    },
+    {
+        id: 2,
+        title: "Studying in Graz: The NAWI Graz Experience",
+        subtitle: "Fostering Collaboration Between University of Graz and TU Graz",
+        description: "Discover how NAWI Graz blends scientific depth and technical expertise.",
+        topic: "Education",
+        author: "Georg Herbert Blüthner",
+        date: "2025-02-13",
+        authorAvatar: "georg-herbert-bluthner.webp",
+        topicImage: "NAWI_Graz_Logo_2015.png",
+        thumbnail: "university-library-4825366_640.jpg",
+        content: "<p>The NAWI Graz program is an exceptional collaboration between the University of Graz and the Technical University of Graz (TU Graz). This partnership brings together the strengths of both institutions, allowing students to experience the best of both worlds—scientific depth at the University of Graz and technical application at TU Graz.</p>\n" +
+            "\n" +
+            "<p><strong>Bachelor’s in Environmental Systems Sciences</strong></p>\n" +
+            "\n" +
+            "<p>One of the standout programs within NAWI Graz is the Environmental Systems Sciences bachelor’s degree. This interdisciplinary program provides a strong foundation in environmental science, sustainability, and systems thinking. Students gain expertise in analyzing ecological and human-made systems using a combination of natural sciences, mathematics, and socio-economic approaches.</p>\n" +
+            "\n" +
+            "<p>At the University of Graz, students delve into environmental modeling, climate science, and sustainability studies, while TU Graz offers technical applications, data analysis, and engineering solutions to environmental challenges.</p>\n" +
+            "\n" +
+            "<p><strong>Master’s in Space Sciences and Earth from Space</strong></p>\n" +
+            "\n" +
+            "<p>For those passionate about space exploration and earth observation, the Space Sciences and Earth from Space master’s program provides cutting-edge education in astrophysics, remote sensing, and planetary sciences.</p>\n" +
+            "\n" +
+            "<p>At the University of Graz, students focus on astrophysics, geophysics, and planetary research, guided by leading scientists in space science.</p>\n" +
+            "\n" +
+            "<p>At TU Graz, the emphasis shifts to satellite technology, remote sensing, and data analysis, equipping students with the technical expertise needed for careers in the space industry.</p>\n" +
+            "\n" +
+            "<p><strong>A Collaborative Learning Experience</strong></p>\n" +
+            "\n" +
+            "<p>The NAWI Graz model ensures students receive an interdisciplinary education by taking courses at both universities. This allows for a dynamic learning environment where students engage with researchers, work on joint projects, and access state-of-the-art laboratories.</p>\n" +
+            "\n" +
+            "<p>With strong industry connections and opportunities for international research collaborations, NAWI Graz students are well-prepared for careers in environmental science, space technology, and beyond.</p>\n",
+        images: ["/images/mui_example1.png", "/images/mui_example2.png"]
+    },
+    {
+        id: 3,
+        title: "Free Electives for Space Science and Astrophysics Students",
+        subtitle: "Enhance Your Expertise with These Hands-On and Interdisciplinary Courses",
+        description: "Courses that complement Space Science and Astrophysics studies",
+        topic: "Education",
+        author: "Georg Herbert Blüthner",
+        date: "2025-02-17",
+        authorAvatar: "georg-herbert-bluthner.webp",
+        topicImage: "observatory.jpg",
+        thumbnail: "people_study.jpg",
+        content: "\n" +
+            "<p>Pursuing a master's degree in <strong>Space Sciences and Earth from Space</strong> or <strong>Astrophysics</strong> at TU Graz and University of Graz provides students with a rich selection of elective courses. These courses allow for specialization in key areas such as exoplanet research, aerospace engineering, image processing, and hands-on astronomical observations.</p>\n" +
+            "\n" +
+            "<p><strong>PHT.525UF - Exoplanets and Our Place in the Universe</strong></p>\n" +
+            "\n" +
+            "<p>This interdisciplinary lecture explores one of the most exciting fields in modern astrophysics: exoplanets and astrobiology. The course offers an engaging mix of lectures on the origins of life, planetary habitability, and the search for exoplanets.</p>\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li>Learn about astrobiology and the conditions and buildingblocks required for life on Earth and beyond.</li>\n" +
+            "  <li>Participate in a group project to design a <strong>mission proposal</strong> for exploring an exoplanetary system.</li>\n" +
+            "  <li>Ideal for students interested in planetary science, exoplanet exploration, and the search for extraterrestrial life.</li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "<p><em>3 ECTS | TU Graz | Summer Semester</em></p>\n" +
+            "\n" +
+            "<p><strong>SES.227UF - Systems Engineering in Aerospace Applications</strong></p>\n" +
+            "\n" +
+            "<p>For those who want to gain hands-on experience in aerospace engineering, this course offers a real-world approach to complex technical challenges. Learn about the critical aspects of <strong>systems engineering</strong>, from safety and requirements management to industry standards.</p>\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li>Understand how complex space missions and aerospace projects are planned and executed.</li>\n" +
+            "  <li>Gain insights into safety regulations, norms, and team coordination in aerospace engineering.</li>\n" +
+            "  <li>Highly recommended for students considering careers in spacecraft design and space mission planning.</li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "<p><em>3 ECTS | TU Graz | Winter Semester</em></p>\n" +
+            "\n" +
+            "<p><strong>SES.302UF - Image Processing and Pattern Recognition</strong></p>\n" +
+            "\n" +
+            "<p>Image processing is essential for analyzing satellite imagery, astronomical observations, and planetary surface mapping. This course covers key techniques such as:</p>\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li>Image preprocessing and restoration</li>\n" +
+            "  <li>Segmentation and motion analysis</li>\n" +
+            "  <li>Classification using advanced computational methods</li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "<p>Whether you're working with satellite remote sensing or astrophotography, this course equips you with the technical skills needed for extracting meaningful information from complex images.</p>\n" +
+            "\n" +
+            "<p><em>3 ECTS | TU Graz | Winter Semester</em></p>\n" +
+            "\n" +
+            "<p><strong>PHM.111UB - Astrophysics Lab</strong></p>\n" +
+            "\n" +
+            "<p>For students interested in <strong>hands-on astronomical observation</strong>, the Astrophysics Lab is an excellent choice. Conduct real observations at the Lustbühel Observatory, plan your own observation sessions, and analyze data using Python.</p>\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li>Learn the fundamentals of night sky observation and telescope operation.</li>\n" +
+            "  <li>Reduce and process observational data to study variable stars or exoplanet transits.</li>\n" +
+            "  <li>Work directly with professional astronomers and present your findings.</li>\n" +
+            "</ul>\n" +
+            "\n" +
+            "<p>This lab is perfect for students who want to gain practical experience in observational astronomy.</p>\n" +
+            "\n" +
+            "<p><em>3 ECTS | TU Graz | Winter Semester</em></p>\n" +
+            "\n" +
+            "<p><strong>Final Thoughts</strong></p>\n" +
+            "\n" +
+            "<p>These electives provide a fantastic opportunity to deepen your expertise, whether you're interested in exoplanets, aerospace engineering, image processing, or hands-on astronomy. Each course offers unique insights and practical experience that will be valuable for careers in space research, satellite technology, or academia.</p>\n" +
+            "\n" +
+            "<p>If you're looking for engaging electives to complement your studies, these courses will ensure you get the most out of your master's program.</p>\n"
+        ,
+        images: ["/images/typescript_example1.png", "/images/typescript_example2.png"]
+    },
     // {
     //     id: 4,
     //     title: "State Management with Redux",

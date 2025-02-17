@@ -12,7 +12,7 @@ import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import {useNavigate} from "react-router-dom";
 
 
-const pages = ['About', 'Contact', 'Blog', 'Home'];
+const pages = ['Home', 'About', 'Contact', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
